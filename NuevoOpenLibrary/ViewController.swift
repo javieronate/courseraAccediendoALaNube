@@ -20,7 +20,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var portada: UIImageView!
     
-    @IBOutlet weak var autores: UILabel!
+    @IBOutlet weak var autoresMultiple: UITextView!
+    
     
     // MARK: defaults
     
@@ -31,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.isbn.clearButtonMode = .Always
         self.error.text = ""
         self.titulo.text = ""
-        self.autores.text = ""
+        self.autoresMultiple.text = ""
     }
 
     // MARK: actions
@@ -40,7 +41,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.isbn.text = ""
         self.error.text = ""
         self.titulo.text = ""
-        self.autores.text = ""
         self.portada.image = nil
     }
     
@@ -85,11 +85,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             let datosAutor = autor as! NSDictionary
                             let nombreAutor = datosAutor["name"] as! NSString as String
                             if (strAutores != ""){
-                                strAutores += "; "
+                                strAutores += "\r"
                             }
                             strAutores += nombreAutor
+                            
                         }
-                        self.autores.text = strAutores
+                        self.autoresMultiple.text = strAutores
                         
                         // busca si existe la imagen
                         
