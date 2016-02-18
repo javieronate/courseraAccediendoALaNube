@@ -12,6 +12,7 @@
 		F8ABC9081C73A44A00BC81ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8ABC9061C73A44A00BC81ED /* Main.storyboard */; };
 		F8ABC90A1C73A44A00BC81ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8ABC9091C73A44A00BC81ED /* Assets.xcassets */; };
 		F8ABC90D1C73A44A00BC81ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8ABC90B1C73A44A00BC81ED /* LaunchScreen.storyboard */; };
+		F8E2BA5F1C75427800054B7A /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8E2BA5E1C75427800054B7A /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F8ABC9091C73A44A00BC81ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8ABC90C1C73A44A00BC81ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8ABC90E1C73A44A00BC81ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8E2BA5E1C75427800054B7A /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default.jpg; path = ../default.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		F8ABC9011C73A44A00BC81ED /* NuevoOpenLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				F8E2BA601C75428200054B7A /* imagenes */,
 				F8ABC9021C73A44A00BC81ED /* AppDelegate.swift */,
 				F8ABC9041C73A44A00BC81ED /* ViewController.swift */,
 				F8ABC9061C73A44A00BC81ED /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				F8ABC90E1C73A44A00BC81ED /* Info.plist */,
 			);
 			path = NuevoOpenLibrary;
+			sourceTree = "<group>";
+		};
+		F8E2BA601C75428200054B7A /* imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				F8E2BA5E1C75427800054B7A /* default.jpg */,
+			);
+			name = imagenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +137,7 @@
 				F8ABC90D1C73A44A00BC81ED /* LaunchScreen.storyboard in Resources */,
 				F8ABC90A1C73A44A00BC81ED /* Assets.xcassets in Resources */,
 				F8ABC9081C73A44A00BC81ED /* Main.storyboard in Resources */,
+				F8E2BA5F1C75427800054B7A /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +299,7 @@
 				F8ABC9131C73A44A00BC81ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
